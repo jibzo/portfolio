@@ -11,6 +11,7 @@
 // extra large - tablets
 
 @include mediaMd {
+
   main {
     align-items: center;
     text-align: center;
@@ -20,8 +21,7 @@
       margin-bottom: 1rem;
     }
   }
-  ul.menu-nav, 
-  div.menu-branding {
+  ul.menu-nav, div.menu-branding {
       float: none;
       width: 100%;
       min-height: 0;
@@ -44,6 +44,16 @@
       width: 150px;
       height: 150px;
       }
+  }
+
+  .about-info {
+    grid-template-areas: 
+    'bioimage'
+    'bio'
+    'job1'
+    'job2'
+    'job3';
+    grid-template-columns: 1fr;
   }
 }
 
