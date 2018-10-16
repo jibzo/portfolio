@@ -1,11 +1,15 @@
 // extra large - wide screens
 
 @include mediaXL {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 // extra large - Desktops
 
 @include mediaLg {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 // extra large - tablets
@@ -61,6 +65,13 @@
 
 @include mediaSm {
   main#home h1 {
+
     margin-top: 10vh;
   }
+
+
+.projects {
+  grid-template-columns: 1fr;
+}
+
 }
