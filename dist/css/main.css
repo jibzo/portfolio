@@ -9,7 +9,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #000;
+    background: #fff;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -39,14 +39,14 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: rgba(103, 103, 103, 0.9);
+    background: rgba(28, 35, 61, 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: rgba(116, 116, 116, 0.9);
+    background: rgba(36, 45, 78, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -54,9 +54,9 @@
   .menu .portrait {
     width: 250px;
     height: 250px;
-    background: url("/dist/img/portrait.jpg");
+    background: url("../img/portrait.jpg");
     border-radius: 50%;
-    border: solid 3px #eece1a; }
+    border: solid 3px #6263A7; }
 
 .nav-item {
   transform: translate3d(600px, 0, 0);
@@ -64,7 +64,7 @@
   .nav-item.show {
     transform: translate3d(0, 0, 0); }
   .nav-item.current > a {
-    color: #eece1a; }
+    color: #6263A7; }
   .nav-item .nav-link {
     display: inline-block;
     position: relative;
@@ -72,11 +72,11 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .nav-item .nav-link:hover {
-      color: #eece1a; }
+      color: #6263A7; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -94,8 +94,8 @@
   box-sizing: border-box; }
 
 body {
-  background: #747474;
-  color: #000;
+  background: #242D4E;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -111,7 +111,7 @@ body {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(116, 116, 116, 0.9);
+      background: rgba(36, 45, 78, 0.8);
       z-index: -1; }
 
 h1,
@@ -128,10 +128,10 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(121, 121, 121, 0.5); }
+    background: rgba(39, 49, 85, 0.5); }
 
 a {
-  color: #fff;
+  color: #cecece;
   text-decoration: none; }
 
 header {
@@ -140,7 +140,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #6263A7; }
 
 main {
   padding: 4rem;
@@ -150,7 +150,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #6263A7;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -160,26 +160,31 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "job1 job2 job2";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #eece1a 3px solid; }
+    border: #6263A7 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
   .about-info .job-1 {
-    grid-area: job1; }
+    grid-area: job1;
+    text-align: center; }
   .about-info .job-2 {
     grid-area: job2; }
   .about-info .job-3 {
     grid-area: job3; }
   .about-info .job {
-    background: #818181;
+    background: #2c375f;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: #6263A7 5px solid; }
+
+.big-icon {
+  font-size: 45px;
+  margin: 5px; }
 
 .projects {
   display: grid;
@@ -190,7 +195,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #6263A7;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -207,7 +212,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #eece1a;
+      background: #6263A7;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -218,7 +223,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #6263A7;
     color: #000; }
 
 .btn-dark {
@@ -226,14 +231,14 @@ main {
   color: #fff; }
 
 .btn-light {
-  background: #f4f4f4;
+  background: #9faad2;
   color: #333; }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: #5b5b5b;
-  color: #000;
+  background: #14192b;
+  color: #fff;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {
@@ -264,7 +269,7 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("/dist/img/portrait_small.jpg");
+      background: url("../img/portrait_small.jpg");
       width: 150px;
       height: 150px; }
   .about-info {

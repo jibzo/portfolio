@@ -35,7 +35,7 @@ h3 {
 }
 
 a {
-  color: #fff;
+  color: rgb(206, 206, 206);
   text-decoration: none;
 }
 header {
@@ -78,7 +78,7 @@ main {
   grid-gap: 30px;
   grid-template-areas:
     "bioimage bio bio"
-    "job1 job2 job3";
+    "job1 job2 job2";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -95,6 +95,7 @@ main {
 
   .job-1 {
     grid-area: job1;
+    text-align: center;
   }
 
   .job-2 {
@@ -113,7 +114,10 @@ main {
 }
 
 // Work/projects
-
+.big-icon {
+  font-size: 45px;
+  margin: 5px;
+}
 .projects {
   display: grid;
   grid-gap: 0.7rem;
